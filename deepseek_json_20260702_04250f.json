@@ -1,0 +1,24 @@
+{
+  "Logging": {
+    "LogLevel": {
+      "Default": "Information",
+      "Microsoft": "Warning",
+      "Microsoft.Hosting.Lifetime": "Information",
+      "Cache": "Debug"
+    }
+  },
+  "ApiCacheConfig": {
+    "DefaultCacheSeconds": 60,
+    "PathConfigs": {
+      "/api/products": 300,
+      "/api/categories": 180,
+      "/api/orders/*": 120,
+      "/api/products/{id}": 120
+    }
+  },
+  "DegradationCache": {
+    "MaxConsecutiveFailures": 3,
+    "CacheExpirySeconds": 3600,
+    "EnableLogging": true
+  }
+}

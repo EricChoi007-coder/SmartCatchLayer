@@ -1,0 +1,27 @@
+CacheDegradationSystem/
+├── CacheDegradationSystem.csproj          # 项目文件
+├── Program.cs                             # 入口
+├── appsettings.json                       # 配置文件
+├── appsettings.Development.json           # 开发环境配置
+│
+├── Attributes/
+│   ├── CacheDurationAttribute.cs
+│   ├── CacheProfileAttribute.cs
+│   └── NoCacheAttribute.cs
+│
+├── Services/
+│   ├── HybridCacheConfigurationService.cs
+│   ├── EnhancedDegradationCacheService.cs
+│   └── CacheLoggerService.cs
+│
+├── Filters/
+│   ├── DetailedHybridCacheFilter.cs
+│   └── DetailedExceptionFilter.cs
+│
+├── Models/
+│   ├── CacheConfiguration.cs
+│   ├── CacheLogEntry.cs
+│   └── EndpointMetadata.cs
+│
+└── Controllers/
+    └── ProductsController.cs
